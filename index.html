@@ -6,14 +6,22 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <style>
+    p {
+      border: 1px;
+      border-color: green;
+      border-style: dashed;
+      padding: 10px;
 
+    }
+  </style>
   <title>Chunkerify</title>
 </head>
 
 <body>
 
   <h2>Chunkerify</h2>
-  <h5>A small app to divide text into chunks based on number of character. </h5>
+  <h4>A small app to divide text into chunks based on number of character. </h4>
 
   <br><br>
   <label> Chunk Size / How many character per chunk?</label>
@@ -24,9 +32,9 @@
   <textarea name="InputText" id="InputText" placeholder="Enter your text here"></textarea>
 
   <br>
-  <div id="mainOutputArea" style="white-space: pre-wrap" ;>
 
-
+  <div id="mainOutputArea" style="white-space: break-spaces" ;>
+    <p>Click to copy</p>
   </div>
 
   <script type="module" src="/src/main.ts"></script>
